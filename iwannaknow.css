@@ -49,7 +49,7 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 
-.pullUp:hover {
+.pullUp:onclick {
   transform: translateY(0px);
 }
 /* pocket Styling */
