@@ -1,4 +1,7 @@
-nav{
+body {
+  background-color: #EAFAF1;
+}
+  nav{
   margin: 40px, 0;
 }
 nav ul{
