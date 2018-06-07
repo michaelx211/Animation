@@ -1,65 +1,21 @@
-/* General Styling */
-
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700italic|Fauna+One);
-body {
-  background: #fff;
-}
-
 h1 {
-  font-family: 'Playfair Display', script;
-  font-style: italic;
-  color: #73e7c0;
-  font-size: 20px;
+  margin: 0
 }
-
-p {
-  font-family: 'Fauna One', serif;
-  font-size: 12px;
-  line-height: 26px;
-  color: #002e17;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: #a3a291;
-}
-
-.container {
-  width: 2000px;
-  height: 1500px;
+.box {
+  height: 1000px;
+  width: 1500px;
   overflow: hidden;
-  margin: 0 auto;
+  border: 1px solid maroon;
+  background: pink;
 }
-/* pullUp Styling */
-
-.pullUp {
-  width: 2000px;
-  margin: 0 auto;
-  padding: 2em;
-  background-color: #f7f7eb;
+.hid-box {
+  top: 100%;
   position: relative;
-  -webkit-border-top-left-radius: 100px;
-  -webkit-border-top-right-radius: 100px;
-  -moz-border-radius-topleft: 100px;
-  -moz-border-radius-topright: 100px;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  transform: translateY(140px);
-  transition: all onclick
-
-  /* 0.5s ease-in-out; */
+  transition: all .3s ease-out;
+  background: maroon;
+  height: 100%;
 }
 
-.pullUp:hover {
-  transform: translateY(0px);
-}
-/* pocket Styling */
-
-.pocket {
-  height: 500px;
-  border-top: 1px solid #a3a291;
-  background-color: #fff;
-  position: relative;
-  z-index: 2;
+.box:hover > .hid-box{
+  top: 0;
 }
